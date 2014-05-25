@@ -35,13 +35,13 @@ The total layout of the file (ignoring the row indicator), based on the files in
         |...|...|...    |  
         |___|___|_______|  
  
-1. `train/subject_train.txt` --- the subject identifiers for the training set; one column only.
-2. `test/subject_test.txt` -- same for test set.
-3. `train/y_train.txt` --- the activity for the training set (mapped from a number to a description using `activity_labels.txt`); one column only.
-4. `test/y_test.txt` --- same for test set.
-5. `train/X_train.txt` --- the actual measurement data from the training set; multiple columns.
-6. `test/X_test.txt` --- same for test set.
-7. `features.txt` --- names of the columns/measurements (cleaned up to be more R friendly).
+1. `train/subject_train.txt` - the subject identifiers for the training set; one column only.
+2. `test/subject_test.txt` - same for test set.
+3. `train/y_train.txt` - the activity for the training set (mapped from a number to a description using `activity_labels.txt`); one column only.
+4. `test/y_test.txt` - same for test set.
+5. `train/X_train.txt` - the actual measurement data from the training set; multiple columns.
+6. `test/X_test.txt` - same for test set.
+7. `features.txt` - names of the columns/measurements (cleaned up to be more R friendly).
 
 `clean_UCI_summary.txt`
 -----------------------
