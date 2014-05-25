@@ -16,7 +16,7 @@ Running the R script `run_analysis.R` will:
 
 Results
 -------
-Final data is stored in variables `data` and `summary`, and written to files `clean_UCI_data.txt` and `clean_UCI_summary.txt`. The details of the data are in `WorkBook.md`.
+Final data is stored in variables `data` and `summary`, and written to files `clean_UCI_data.txt` and `clean_UCI_summary.txt`. The details of the data are in `WorkBook.md`. The file `features_info.txt` contains the original description of the measurements and is only added for completeness.
 
 Requirements
 ------------
