@@ -27,16 +27,18 @@ datacols <- gsub("[,-]",".", gsub("[()]", "", featuremap[validcols, 2]))
 # (include optional leading . to prevent resulting ..)
 datacols <- gsub("\\.?([A-Z])", ".\\L\\1", datacols, perl=TRUE)
 
-# Translate some abbreviations, assuming body.body is a typo and should be body
+# Translate some abbreviations, assume body.body is a typo and should be body
 words <- c("\\.acc", "\\.std", "\\.mag", "^t", "^f", "body\\.body")
 translations <- c(".acceleration", ".standarddeviation", ".magnitude", "time", 
                   "fft", "body")
-wordmap <- cbind(words, translations)
 for (i in 1:length(words)) {
     datacols <- gsub(words[i], translations[i], datacols)
 }
 # !! We keep the dots in the column names as that seems standard in R, although
 # !! it is different from the teacher's preference.
+
+# Put the words and their translations in one dataframe so it is easy to verify
+wordmap <- cbind(words, translations)
 
 # Concat train and test subjects
 subjects <- rbind(subjecttrain, subjecttest)
