@@ -6,7 +6,7 @@ Below is the description of the data in the generated `clean_UCI_data.txt` and `
 Method
 ------
 
-The data is taken from the original UCI dataset by combining the train and test data. Only mean and standard deviation related measurements are maintained, other data (columns) are discarded. Extra columns to indicate activity and subject number. These come from separate files in the UCI repository.
+The data is taken from the original UCI dataset by combining the train and test data. Only mean and standard deviation related measurements (having `main()` or `std()` in the name) are maintained, other data (columns) are discarded. Extra columns to indicate activity and subject number are added on the left. These come from separate files in the UCI repository.
 Both files are written with the default settings of the R write.table function. 
 The first row contains the headers. The column separator is a space. Strings are quoted using double quotes. 
 
