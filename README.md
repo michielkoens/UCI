@@ -1,7 +1,7 @@
 UCI
 ===
 
-Clean up data from UCI [Human Activity Recognition Using Smartphones Data Set:](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+This repository contains code to clean up data from UCI [Human Activity Recognition Using Smartphones Data Set:](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 Usage
 -----
@@ -28,3 +28,5 @@ The following files are expected to be readable for `run_analysis.R`:
 - `test/X_test.txt`
 - `test/y_test.txt`
 - `test/subject_test.txt`
+- `activity_labels.txt`
+- `features.txt`
